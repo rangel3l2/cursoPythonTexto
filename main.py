@@ -1,8 +1,9 @@
+from lib2to3.pytree import _Results
 import cv2,pytesseract
 
 #if os.path.exists("")
 
-image = cv2.imread('img/doc01.png')
+image = cv2.imread('img/feliz.jpg')
 
 print(image.shape)
 # cv2.imshow('Original', image)
@@ -17,5 +18,4 @@ print(image.shape)
 texto = pytesseract.image_to_string(image)
 
 print(texto)
-
 
